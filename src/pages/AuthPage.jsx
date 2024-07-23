@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function AuthPage() {
   const loginImage = "https://sig1.co/img-twitter-1";
-  
+
   const [modalShow, setModalShow] = useState(null);
   const handleShowSignUp = () => setModalShow("signup");
   const handleShowLogin = () => setModalShow("login");
@@ -84,6 +84,9 @@ export default function AuthPage() {
           </Button>
           <Button className="rounded-pill" variant="outline-dark">
             <i className="bi bi-apple"></i> Sign up with Apple
+          </Button>
+          <Button className="rounded-pill" variant="outline-dark">
+            <i className="bi bi-facebook"></i> Sign up with Facebok
           </Button>
           <p style={{ textAlign: "center" }}>or</p>
           <Button className="rounded-pill" onClick={handleShowSignUp}>
